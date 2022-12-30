@@ -6,17 +6,24 @@
 
 
 ## Objective
-* For this assignment, learners should create an HTML file with a table element that includes a caption element and several rows and cells. The table should contain the following data:
+* In this exercise, the learner is responsible for defining a form element on the DOM.
 
-| Name         | Power                                  | Alter Ego    |
-|--------------|----------------------------------------|--------------|
-| Superman     | Super Strength, Flight, Laser Vision   | Clark Kent   |
-| Wonder Woman | Super Strength, Flight, Healing Factor | Diana Prince |
-| Iron Man     | Super Strength, Flight, Laser Beams    | Tony Stark   |
+* The `form` should include the following elements:
+  * A `label` element for the text input
+  * A `input` element of type "text"
+  * A `select` element with at least 3 option elements
+  * A `button` element of type "submit"
+* The learner should also ensure that the `form` element has an appropriate id attribute, as this will be used to verify the form's existence in the provided JavaScript file.
 
-* In addition to the table, learners should also create a form element that includes a text input, a select dropdown, and a submit button.
-  * The form should be set up to submit the data to a server, but the actual submission does not need to be implemented.
-* The learners should use the `table`, `caption`, `tr`, `th`, and `td` tags to create the table and form elements, and use appropriate attributes to style and organize the elements as needed.
+### Test Verification
+`./js/test/TestMainApplication.js` is provided to verify the existence of the form element and its child elements on the DOM. The learner should ensure that their form element satisfies the following conditions:
+  * The form element should have an id attribute
+  * The form element should contain a label element
+  * The form element should contain an input element of type "text"
+  * The form element should contain a select element with at least 3 option elements
+  * The form element should contain a button element of type "submit"
+* If any of these conditions are not met, the JavaScript file will log an error message to the console.
+* The learner should ensure that their form element satisfies all of the above requirements and that it passes the verification checks in the JavaScript file.
 
 ### Solution View
 

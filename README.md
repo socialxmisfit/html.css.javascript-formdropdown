@@ -27,7 +27,7 @@
 
 ### Solution View
 
-[![](./img/solution.png)](./img/solution.png)
+![](./img/solution.png)
 
 
 ## How to Download

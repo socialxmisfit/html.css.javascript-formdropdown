@@ -1,48 +1,37 @@
-<!DOCTYPE html>
 <html lang="en">
-
-<!-- ----------------------------------------------------------------- -->
-<!-- ----------------------------------------------------------------- -->
-<!-- ----------------------------------------------------------------- -->
-
 <head>
-  <!-- header begins here -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="">
-  <meta name="author" content="">
-  <title>Shopping Cart Test Suite</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
 
-  <!-- Import the CPM test classes -->
-  <script src="./js/test/utils/TestingUtilities.js"></script>
-  <script src="./js/main/MainApplication.js"></script>
+  <script type="text/javascript">
+    function evaluateUserInput(){
+        let userName = document.getElementById("user_name").value;
+        let selectedwitch = document.getElementById("witch_select").value;
+        let outputDisplay = "Hello, " + userName + "! You're a: " + selectedwitch;
+        document.getElementById("output").innerHTML = outputDisplay;
+        return false;
+    }
+  </script>
+    </head>
+    
+    <body>
+        <form id="myform">
+          <!-- Label for the text input -->
+          <label for="user_name">Enter your witch name:</label><br>
+          <input id="user_name" type="text" /><br><br>
 
-</head>
+          <!-- Label for the select dropdown -->
+          <label for="witch_select">Choose your type of witch:</label><br>
+          <select id="witch_select">
+            <option value="Green Witch">Green Witch</option>
+            <option value="Elemental Witch">Elemental Witch</option>
+            <option value="Eclectic Witch">Eclectic Witch</option>
+          </select><br><br>
 
-<!-- ---------------------------------------------------------------------------------- -->
-<!-- ---------------------------------------------------------------------------------- -->
-<!-- ---------------------------------------------------------------------------------- -->
-
-<body>
-  <!-- body begins here -->
-
-  View the `Console` tab of the `Developer Tools` to see output of the JavaScript Files
-
-
-
-
-  <!-- ====================================================== -->
-  <!-- ====================================================== -->
-  <footer>
-    <!-- footer of page begins here -->
-    <script src="./js/test/TestMainApplication.js"></script>
-  </footer> <!-- footer of page ends here -->
-  <!-- ====================================================== -->
-  <!-- ====================================================== -->
-
-</body>
-<!-- ---------------------------------------------------------------------------------- -->
-<!-- ---------------------------------------------------------------------------------- -->
-<!-- ---------------------------------------------------------------------------------- -->
-
+          <!-- Button to trigger the action -->
+          <button id="submit_button" type="submit" onClick="return evaluateUserInput();">Submit</button>
+        </form> 
+        <p id="output">Double, double toil and trouble: Fire burn and cauldron bubble!</p>
+    </body>
 </html>
